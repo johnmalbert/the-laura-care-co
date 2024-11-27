@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from 'react-router-dom';
 import "../styles/Home.css";
 
 function Home() {
@@ -19,9 +20,7 @@ function Home() {
           banana bread, Laura has something for everyone. How can Laura care for
           you?
         </p>
-        <a href="/products" className="products-link">
-          Explore Products
-        </a>
+        <Link to="/products" className="products-link">Products</Link>
       </section>
     </motion.div>
   );
